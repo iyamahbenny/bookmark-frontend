@@ -1,0 +1,1260 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik";
+  scroll-behavior: smooth;
+}
+body {
+  margin: auto;
+  padding: 0px;
+}
+.input {
+  position: relative;
+}
+.erroricon {
+  position: absolute;
+  display: none;
+  right: 32%;
+  top: 31%;
+}
+
+#mobilenav {
+  position: absolute;
+
+  width: 27vw;
+  height: 90vh;
+  background-color: rgba(8, 17, 66, 0.734);
+  opacity: 0;
+  transition: 0.5s;
+}
+.ulmobile {
+  position: relative;
+  top: 50px;
+  margin: auto;
+  text-align: center;
+  justify-content: space-between;
+  height: 50vh;
+}
+.mobilelogo {
+  color: white;
+  margin-left: 100px;
+  margin-top: 30px;
+  font-weight: 900;
+  font-size: 22px;
+}
+#t {
+  position: relative;
+  left: 40px;
+}
+.fandb {
+  margin-top: 200px;
+  margin-left: 170px;
+  justify-content: space-between;
+}
+.limobile {
+  color: rgb(229, 229, 229);
+  font-size: 22px;
+  padding: 20px 0px;
+}
+.loginmobile {
+  position: relative;
+  font-size: 22px;
+  padding: 10px 100px;
+  top: 50px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 6px;
+}
+.topdiv {
+  display: flex;
+  height: 100px;
+  padding-top: 20px;
+  justify-content: space-between;
+}
+.bookmark {
+  margin-left: 150px;
+  margin-top: 40px;
+}
+.hamburger {
+  float: right;
+  bottom: 50px;
+  position: relative;
+  right: 100px;
+  display: none;
+}
+.navbar {
+  cursor: pointer;
+  float: right;
+  display: flex;
+  width: 600px;
+  font-size: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
+  top: 15px;
+  right: 80px;
+  padding: 5px 15px;
+}
+.ppp {
+  transition: 0.1s;
+}
+.ppp:hover {
+  color: hsl(0, 94%, 66%);
+
+  text-decoration: none;
+}
+
+.login {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  background-color: orangered;
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: inline-block;
+  height: 30px;
+  transition: 0.3s;
+  display: grid;
+  place-items: center;
+  border: 1px solid hsl(0, 94%, 66%);
+}
+.login:hover {
+  background-color: white;
+  color: hsl(0, 94%, 66%);
+  text-decoration: none;
+}
+
+.asimplebookmark {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+.simpleblock {
+  position: relative;
+  margin-right: 100px;
+  left: 110px;
+  width: 400px;
+  height: 15rem;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.features {
+  padding-bottom: 90px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.feat {
+  font-weight: 900;
+  margin: auto;
+  text-align: center;
+}
+
+.tab-content {
+  width: 400px;
+}
+
+.p {
+  color: grey;
+  font-size: 15px;
+}
+.geton {
+  display: flex;
+  justify-content: space-between;
+  width: 15rem;
+  cursor: pointer;
+}
+.getchrome {
+  cursor: pointer;
+  background-color: hsl(231, 69%, 60%);
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  transition: 0.3s;
+}
+.getchrome:hover {
+  background-color: white;
+  border: 2px solid hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+  text-decoration: none;
+}
+.getfirebox {
+  font-size: 12px;
+  padding: 7px;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  background-color: rgb(221, 227, 233);
+  transition: 0.3s;
+}
+.getfirebox:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  text-decoration: none;
+}
+.firstimage {
+  position: relative;
+  height: 23rem;
+}
+
+.p2 {
+  color: grey;
+  width: 400px;
+  font-size: 15px;
+  margin: auto;
+  text-align: center;
+}
+
+#ulist {
+  justify-content: space-between;
+  margin: auto;
+  text-align: center;
+  bottom: 100px;
+  width: 700px;
+}
+#a1 {
+  border: none;
+  cursor: pointer;
+}
+.nav-link {
+  color: black;
+}
+#a1:hover {
+  color: hsl(0, 94%, 66%);
+}
+
+#bookhead1 {
+  font-weight: 900;
+}
+#bookhead2 {
+  font-weight: 900;
+}
+#bookhead3 {
+  font-weight: 900;
+}
+#bookp {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#secondimage,
+#thirdpic,
+#fourthpic {
+  margin-left: 100px;
+  height: 20rem;
+  width: 25rem;
+}
+
+.tabActive,
+.nav-tabs .nav-link.active {
+  color: hsl(0, 94%, 66%);
+}
+
+#home {
+  width: 100%;
+  justify-content: space-between;
+}
+.secondpara {
+  width: 300px;
+}
+#thirdpara {
+  width: 300px;
+}
+#fourthpara {
+  width: 250px;
+}
+#para {
+  padding: 0px;
+}
+
+#more {
+  background-color: hsl(231, 69%, 60%);
+  width: 100px;
+  font-size: 13px;
+  padding: 7px;
+  top: -5rem;
+  color: white;
+  transition: 0.3s;
+  border-radius: 3px;
+  border: 2px solid hsl(231, 69%, 60%);
+}
+#more:hover {
+  color: hsl(231, 69%, 60%);
+  background-color: white;
+  text-decoration: none;
+}
+
+#download-extensions {
+  margin: auto;
+
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+#downloadhead {
+  font-weight: 900;
+}
+#p3 {
+  width: 400px;
+  position: relative;
+  font-size: 15px;
+  color: grey;
+  margin: auto;
+  text-align: center;
+}
+#extensions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 800px;
+  text-align: center;
+  margin: auto;
+  height: 30rem;
+  position: relative;
+}
+.chrome,
+.firefox,
+.opera {
+  width: 240px;
+  box-shadow: 5px 10.5px 10px 2px rgb(238, 236, 236);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+  border-radius: 8px;
+
+  background-color: rgb(255, 255, 255);
+  height: 22rem;
+}
+.logo {
+  margin-top: 40px;
+  margin-left: 60px;
+  height: 100px;
+  width: 100px;
+}
+.chrome {
+  bottom: 60px;
+  position: relative;
+}
+.firefox {
+  bottom: 30px;
+  position: relative;
+}
+.head {
+  font-size: 20px;
+  font-weight: 800;
+}
+.paragraph {
+  font-size: 13px;
+  bottom: 15px;
+  position: relative;
+}
+.button {
+  text-decoration: none;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  width: 180px;
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 5px 10px;
+  cursor: pointer;
+  bottom: 20px;
+  position: relative;
+  border-right: 20px;
+  left: 30px;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: white;
+  color: hsl(231, 69%, 60%);
+  border: 2px solid hsl(231, 69%, 60%);
+  text-decoration: none;
+}
+#dots {
+  position: relative;
+}
+.frequency-asked-questions {
+  position: relative;
+
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.freqH2 {
+  font-weight: 900;
+}
+
+#para {
+  position: relative;
+  font-size: 15px;
+  color: grey;
+  bottom: 15px;
+  width: 100%;
+  padding: 20px 300px;
+}
+[data-toggle="collapse"]:after {
+  display: inline-block;
+
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f054";
+  transform: rotate(90deg);
+  transition: all linear 0.25s;
+  float: right;
+}
+[data-toggle="collapse"].collapsed:after {
+  transform: rotate(0deg);
+}
+
+.tabs {
+  top: 20px;
+
+  background-color: white;
+}
+#anchor {
+  color: rgb(53, 53, 53);
+  background-color: white;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#anchor:hover {
+  color: hsl(0, 94%, 66%);
+  transition: 0.5s;
+  text-decoration: none;
+}
+.card-header {
+  background-color: white;
+}
+.PP {
+  margin-left: 20px;
+  position: relative;
+  text-align: justify;
+}
+
+#accordion {
+  width: 700px;
+  margin: auto;
+  padding-bottom: 200px;
+}
+#moreinformation {
+  position: relative;
+  top: 100px;
+
+  width: 200px;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#moreinfom {
+  border-bottom: 200px;
+  margin: auto;
+  text-align: center;
+}
+.footer {
+  background-color: hsl(231, 69%, 60%);
+  height: 15rem;
+}
+.upper-footer {
+  justify-content: space-between;
+}
+.bottomfooter {
+  background-color: hsl(229, 31%, 21%);
+  bottom: 10px;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
+  bottom: 10px;
+}
+.fpc {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottomtext {
+  font-size: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.bottomtext:hover {
+  color: hsl(0, 94%, 66%);
+}
+.already-joined {
+  color: white;
+  letter-spacing: 4px;
+  font-size: 13px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.stayup {
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+}
+.input {
+  justify-content: space-between;
+  display: flex;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+#email {
+  padding-left: 15px;
+  padding-right: 117px;
+  font-size: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: grey;
+  border-radius: 4px;
+  border: 3px solid white;
+  bottom: 30px;
+  position: relative;
+  font-weight: 200;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#redcontact {
+  bottom: 23px;
+  position: relative;
+  background-color: hsl(0, 94%, 66%);
+  color: white;
+  text-decoration: none;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding: 10px;
+  font-weight: 200;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-right: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#redcontact:hover {
+  background-color: white;
+  color: hsl(0, 94%, 66%);
+  border: 3px solid hsl(0, 94%, 66%);
+  text-decoration: none;
+}
+.iconn {
+  position: relative;
+}
+.facebookicon {
+  cursor: pointer;
+  height: 15px;
+}
+.facebookicon:hover {
+  background-color: hsl(0, 94%, 66%);
+  transition: 0.3s;
+}
+.twittericon {
+  cursor: pointer;
+  height: 15px;
+  margin-left: 13px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    width: 350px;
+    right: 20px;
+  }
+  .bookmark {
+    margin-left: 50px;
+    width: 10rem;
+  }
+  .asimplebookmark {
+    position: relative;
+    left: -50px;
+    height: 25rem;
+  }
+  .firstimage {
+    left: 50px;
+    height: 20rem;
+    top: 20px;
+  }
+  #thirdpic {
+    left: 50px;
+    height: 15rem;
+    top: 20px;
+    width: 30rem;
+  }
+
+  #ulist {
+    margin-left: 190px;
+    width: 30rem;
+  }
+  #redline {
+    left: 180px;
+    position: relative;
+  }
+  .redline2 {
+    left: 380px;
+    position: relative;
+  }
+  #para {
+    padding: 20px 200px;
+  }
+  #secondimage {
+    height: 15rem;
+    width: 20rem;
+  }
+  #secondimagerow {
+    justify-content: space-between;
+    width: 100%;
+    height: 20rem;
+  }
+  .block {
+    padding-top: 50px;
+    padding-left: 100px;
+  }
+
+  .blockk {
+    padding-top: 50px;
+    padding-left: 100px;
+  }
+  .blockkk {
+    padding-top: 50px;
+    padding-left: 100px;
+  }
+
+  #thirdpara {
+    position: relative;
+  }
+  #fourthpara {
+    top: -350px;
+    right: 400px;
+  }
+  #thirdpic {
+    width: 20rem;
+  }
+  #fourthpic {
+    left: 50px;
+    height: 15rem;
+    top: 20px;
+  }
+  #bookhead1 {
+    position: relative;
+
+    bottom: 10px;
+  }
+  #bookhead2 {
+    position: relative;
+
+    bottom: 10px;
+  }
+  #bookhead3 {
+    position: relative;
+
+    bottom: 10px;
+  }
+  #more {
+    right: 400px;
+  }
+
+  #moreinformation {
+    height: 10rem;
+
+    border-bottom: 10rem;
+  }
+}
+.already-joined {
+  font-size: 16px;
+}
+.stayupp {
+  font-size: 23px;
+}
+.input {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 760px) {
+  .hamburger {
+    display: block;
+    left: 100px;
+  }
+  .navbar {
+    display: none;
+  }
+
+  #download-extensions {
+    margin: 200px;
+  }
+  .frequency-asked-questions {
+    margin-left: 80px;
+  }
+  #accordion {
+    padding-left: 150px;
+  }
+  .footer {
+    width: 850px;
+  }
+}
+
+@media only screen and (max-width: 714px) {
+  .hamburger {
+    display: block;
+    z-index: 9;
+    width: 30px;
+  }
+  .features {
+    margin: auto;
+    text-align: center;
+    margin-left: 180px;
+    padding: 50px 0px;
+  }
+  .p2 {
+    top: 10px;
+    position: relative;
+  }
+  #download-extensions {
+    margin: auto;
+    padding-left: 200px;
+    padding-bottom: 250px;
+  }
+  #extensions {
+    padding-left: 60px;
+  }
+  #para {
+    padding: 20px 90px;
+  }
+  .frequency-asked-questions {
+    left: 100px;
+  }
+  #mobilenav {
+    z-index: 9;
+    margin-top: -25px;
+    width: 100%;
+    height: 240vh;
+    position: absolute;
+    margin-left: 200px;
+  }
+  .ulmobile {
+    position: relative;
+    top: 50px;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+    height: 50vh;
+    list-style: none;
+  }
+  .mobilelogo {
+    color: white;
+    margin-left: 100px;
+    margin-top: 80px;
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 100px;
+  }
+  #t {
+    height: 50px;
+    position: relative;
+    left: 80px;
+  }
+  #f {
+    height: 50px;
+  }
+  .fandb {
+    padding: 540px 300px;
+    justify-content: space-between;
+  }
+  .limobile {
+    margin: auto;
+    text-align: center;
+    color: rgb(229, 229, 229);
+    font-size: 50px;
+    padding: 30px 0px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 300px;
+  }
+  .loginmobile {
+    position: relative;
+    font-size: 50px;
+    padding: 10px 200px;
+    top: 50px;
+    color: white;
+    text-decoration: none;
+    border: 4px solid white;
+    border-radius: 6px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    font-family: "Rubik";
+    width: 100%;
+    position: absolute;
+    z-index: 6;
+  }
+
+  .hamburger {
+    height: 50px;
+    left: 570px;
+    width: 60px;
+    position: relative;
+    z-index: 9;
+  }
+  #mobilenav {
+    z-index: 9;
+    margin-top: -25px;
+    width: 228vw;
+    height: 240vh;
+    position: absolute;
+  }
+  .ulmobile {
+    position: relative;
+    top: 50px;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+    height: 50vh;
+    list-style: none;
+  }
+  .mobilelogo {
+    color: white;
+    margin-left: 100px;
+    margin-top: 80px;
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 100px;
+  }
+  #t {
+    height: 50px;
+    position: relative;
+    left: 80px;
+  }
+  #f {
+    height: 50px;
+  }
+  .fandb {
+    padding: 540px 300px;
+    justify-content: space-between;
+  }
+  .limobile {
+    margin: auto;
+    text-align: center;
+    color: rgb(229, 229, 229);
+    font-size: 50px;
+    padding: 30px 0px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 800px;
+  }
+  .loginmobile {
+    position: relative;
+    font-size: 50px;
+    padding: 10px 300px;
+    top: 50px;
+    color: white;
+    text-decoration: none;
+    border: 4px solid white;
+    border-radius: 6px;
+  }
+  .bookmark {
+    width: 400px;
+    height: 50px;
+  }
+  .asimplebookmark {
+    margin-top: 200px;
+    height: 240vh;
+    flex-direction: column-reverse;
+  }
+  .firstimage {
+    left: 80px;
+    margin: auto;
+    align-items: center;
+
+    height: 120vh;
+    width: 1000px;
+  }
+
+  .heading1 {
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 0pp;
+  }
+  .p {
+    width: 100%;
+    top: 50px;
+    position: relative;
+    padding: 20px 50px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .geton {
+    position: relative;
+    height: 40vh;
+    top: 100px;
+    width: 95%;
+    height: 100px;
+  }
+  .getchrome {
+    font-size: 50px;
+    height: 500px;
+    padding: 40px 30px;
+    border-radius: 10px;
+  }
+  .getfirebox {
+    border-radius: 10px;
+    font-size: 50px;
+    height: 500px;
+    padding: 40px 30px;
+  }
+  .feat {
+    margin-left: 100px;
+    font-size: 70px;
+  }
+  .p2 {
+    top: 60px;
+    font-size: 40px;
+    right: 140px;
+    width: 800px;
+    position: relative;
+  }
+  .simpleblock {
+    height: 120vh;
+    width: 1000px;
+  }
+  .features {
+    position: relative;
+    left: 100px;
+    height: 80vh;
+    top: 600px;
+  }
+  #progress {
+    height: 400vh;
+    position: relative;
+    top: 20rem;
+  }
+  #ulist {
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+  }
+  #a1 {
+    width: 800px;
+    font-size: 50px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    right: 80px;
+    position: relative;
+    padding: 50px 0px;
+    margin-bottom: 5;
+  }
+  #secondimagerow {
+    top: 400px;
+    position: relative;
+  }
+  #redline {
+    width: 420px;
+    height: 10px;
+    top: -410px;
+    position: relative;
+    margin-left: 140px;
+  }
+  .redline2 {
+    width: 420px;
+    height: 10px;
+    top: -230px;
+    position: relative;
+
+    left: 320px;
+  }
+  .redline3 {
+    width: 420px;
+    height: 10px;
+    top: -60px;
+    position: relative;
+
+    left: 320px;
+  }
+  #bookp {
+    flex-direction: column;
+    height: 200vh;
+  }
+  #secondimage,
+  #thirdpic,
+  #fourthpic {
+    top: 200px;
+    width: 890px;
+    height: 700px;
+    position: relative;
+  }
+  .block,
+  .blockk,
+  .blockkk {
+    width: 800px;
+    height: 400px;
+  }
+
+  #bookhead1 {
+    width: 900px;
+    padding-left: 80px;
+    font-size: 60px;
+  }
+  #bookhead2 {
+    width: 900px;
+    padding-left: 170px;
+    font-size: 60px;
+  }
+  #bookhead3 {
+    padding-left: 130px;
+    width: 900px;
+
+    font-size: 60px;
+  }
+  .secondpara {
+    position: relative;
+    top: 50px;
+    padding-left: 45px;
+    text-align: center;
+    font-size: 40px;
+    width: 800px;
+    color: grey;
+  }
+  #thirdpara,
+  #fourthpara {
+    width: 800px;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    top: 50px;
+    color: grey;
+  }
+  #fourthpara {
+    right: 0px;
+    padding-left: 80px;
+  }
+  #download-extensions {
+    top: 300px;
+    position: relative;
+    height: 100vh;
+  }
+  #more {
+    display: none;
+  }
+  #downloadhead {
+    width: 900px;
+    padding-right: 170px;
+    font-size: 60px;
+  }
+  #p3 {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 40px;
+    width: 800px;
+    padding-right: 130px;
+    color: grey;
+  }
+  #extensions {
+    margin-left: 70px;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 900px;
+  }
+  .chrome {
+    width: 120%;
+    height: 190vh;
+    top: 200px;
+    position: relative;
+    box-shadow: 7.5px 0.5px 30px 9px rgb(238 236 236);
+  }
+  .firefox {
+    width: 120%;
+    height: 190vh;
+    top: 400px;
+    position: relative;
+    box-shadow: 7.5px 0.5px 30px 9px rgb(238 236 236);
+  }
+
+  .opera {
+    width: 120%;
+    height: 190vh;
+    top: 600px;
+    position: relative;
+    box-shadow: 7.5px 0.5px 30px 9px rgb(238 236 236);
+  }
+  .logo {
+    width: 400px;
+    height: 400px;
+    margin-left: 250px;
+    margin-top: 200px;
+  }
+  .head {
+    margin-left: 100px;
+    width: 700px;
+    font-size: 80px;
+  }
+  .paragraph {
+    position: relative;
+    bottom: 80px;
+    margin-left: 100px;
+    width: 700px;
+    font-size: 50px;
+  }
+  #dots {
+    position: relative;
+    bottom: 100px;
+  }
+  .button {
+    position: relative;
+    bottom: 100px;
+    margin-left: 20px;
+    padding-top: 50px;
+    font-size: 50px;
+    width: 800px;
+    height: 170px;
+  }
+  .frequency-asked-questions {
+    height: auto;
+  }
+  .freqH2 {
+    margin-left: 50px;
+    width: 700px;
+    font-size: 80px;
+  }
+  #para {
+    top: 50px;
+    width: 900px;
+    font-size: 50px;
+    right: 55px;
+    padding: 0px;
+  }
+  #accordion {
+    margin-top: 200px;
+    height: auto;
+    width: 1000px;
+    padding-left: 50px;
+    font-size: 35px;
+    margin-bottom: 500px;
+  }
+
+  #anchor {
+    border-width: auto;
+    border-bottom: 1px solid grey;
+    font-size: 45px;
+    padding-bottom: 40px;
+    height: auto;
+  }
+  .tabs {
+    height: auto;
+    padding-top: 70px;
+  }
+  .pp {
+    height: 10vh;
+  }
+  #moreinfom {
+    margin-top: 80px;
+  }
+  #moreinformation {
+    font-size: 40px;
+    padding: 50px 80px;
+    border-radius: 10px;
+  }
+  .footer {
+    height: 200vh;
+    width: 1100px;
+  }
+  .upper-footer {
+    height: 100vh;
+  }
+  .already-joined {
+    padding-top: 180px;
+    font-size: 35px;
+  }
+  .bottomfooter {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .stayup {
+    width: auto;
+  }
+  .stayupp {
+    font-size: 75px;
+    width: auto;
+  }
+  .input {
+    justify-content: space-between;
+    position: relative;
+    bottom: 200px;
+    flex-direction: column;
+    width: auto;
+    margin-left: 90px;
+  }
+  #email {
+    width: 900px;
+    height: 120px;
+    font-size: 40px;
+    border-radius: 10px;
+    bottom: 90px;
+    position: relative;
+    padding-left: 50px;
+  }
+  #redcontact {
+    width: auto;
+    height: 120px;
+    font-size: 40px;
+    border-radius: 10px;
+    padding: 32px 350px;
+    margin-right: 100px;
+  }
+  .fpc {
+    flex-direction: column;
+    height: 50vh;
+  }
+  .bookmarklogo {
+    margin-left: 350px;
+    font-size: 60px;
+  }
+  .bottomtext {
+    font-size: 35px;
+    margin-left: 440px;
+  }
+  .iconn {
+    margin-left: 390px;
+    margin-bottom: 20px;
+  }
+  .facebookicon {
+    height: 50px;
+    width: 50px;
+  }
+  .twittericon {
+    margin-left: 100px;
+    height: 50px;
+    width: 50px;
+  }
+}

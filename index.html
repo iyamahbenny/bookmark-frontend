@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Bookmark landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="topdiv">
+      <div>
+        <img class="bookmark" src="logo-bookmark.svg" alt="" />
+      </div>
+
+      <div class="navbar">
+        <p class="ppp">Features</p>
+        <p class="ppp">Pricing</p>
+        <p class="ppp">Contact</p>
+        <a class="login" href="login.html">Login</a>
+      </div>
+      <div id="mobilenav">
+        <p class="mobilelogo">BOOKMARK</p>
+        <ul class="ulmobile">
+          <li class="limobile">FEATURES</li>
+          <li class="limobile">PRICING</li>
+          <li class="limobile">CONTACT</li>
+          <li><a class="loginmobile" href="login.html">LOGIN</a></li>
+        </ul>
+        <div class="fandb">
+          <img id="f" src="icon-facebook.svg" alt="" />
+          <img id="t" src="icon-twitter.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="ham">
+      <img
+        class="hamburger"
+        onclick="mobilenav()"
+        src="icon-hamburger.svg"
+        alt=""
+      />
+    </div>
+    <div class="asimplebookmark">
+      <div class="simpleblock">
+        <div><h1 class="heading1">A Simple Bookmark Manager</h1></div>
+        <div class="p">
+          A clean and simple interface to organize your favourite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </div>
+        <div class="geton">
+          <div><a class="getchrome" href="">Get it on Chrome</a></div>
+          <div><a class="getfirebox" href="">Get it on Firefox</a></div>
+        </div>
+      </div>
+
+      <img class="firstimage" src="illustration-hero.svg" alt="" />
+    </div>
+    <div class="features">
+      <div>
+        <h2 class="feat">Features</h2>
+
+        <p class="p2">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+      </div>
+    </div>
+
+    <div id="progress">
+      <ul id="ulist" class="nav nav-tabs" role="tablist">
+        <li class="">
+          <a
+            id="a1"
+            class="nav-link active tabActive"
+            data-toggle="tab"
+            href="#home"
+            role="tab"
+            onclick="tabFunc(1)"
+            >Simple Bookmarking
+          </a>
+        </li>
+        <li class="">
+          <a
+            id="a1"
+            class="nav-link"
+            data-toggle="tab"
+            href="#profile"
+            role="tab"
+            onclick="tabFunc(2)"
+            >Speedy Searching</a
+          >
+        </li>
+        <li class="">
+          <a
+            id="a1"
+            class="nav-link"
+            data-toggle="tab"
+            href="#messages"
+            role="tab"
+            onclick="tabFunc(3)"
+            >Easy Sharing</a
+          >
+        </li>
+      </ul>
+      <br />
+      <br />
+      <div id="secondimagerow">
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="home" role="tabpanel">
+            <div id="bookp">
+              <div>
+                <img
+                  id="secondimage"
+                  src="illustration-features-tab-1.svg"
+                  alt=""
+                />
+              </div>
+              <div class="block">
+                <h2 id="bookhead1">Bookmarking in one click</h2>
+
+                <p class="secondpara">
+                  Our aim is to make it quick and easy for you to access your
+                  favourite websites. Your bookmarks sync between your devices
+                  so you can
+                </p>
+                <a id="more" href=""> More Info </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="profile" role="tabpanel">
+            <br />
+
+            <div id="bookp">
+              <div>
+                <img
+                  id="thirdpic"
+                  src="illustration-features-tab-2.svg"
+                  alt=""
+                />
+              </div>
+              <div class="blockk">
+                <h2 id="bookhead2">Intelligent Search</h2>
+                <p id="thirdpara">
+                  Speedy Searching Easy Sharing Bookmark in one click Organize
+                  your bookmarks however you like.
+                </p>
+                <a id="more" href="">More Info</a>
+              </div>
+            </div>
+            <br />
+          </div>
+          <div class="tab-pane" id="messages" role="tabpanel">
+            <br />
+            <div id="bookp">
+              <div>
+                <img
+                  id="fourthpic"
+                  src="illustration-features-tab-3.svg"
+                  alt=""
+                />
+              </div>
+              <div class="blockkk">
+                <h2 id="bookhead3">Share Your bookmarks</h2>
+                <p id="fourthpara">
+                  Our simple drag-and-drop interface gives you complete control
+                  over how you manage your favourite sites
+                </p>
+                <a id="more" href="">More Info</a>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="download-extensions">
+      <h2 id="downloadhead">Download the extension</h2>
+
+      <p id="p3">
+        We’ve got more browsers in the pipeline. Please do let us know if you’ve
+        got a favourite you’d like us to prioritize.
+      </p>
+    </div>
+    <div id="extensions">
+      <div class="chrome">
+        <img class="logo" src="logo-chrome.svg" alt="" />
+        <h3 class="head">Add to Chrome</h3>
+        <p class="paragraph">Minimum version 62</p>
+        <img id="dots" src="bg-dots.svg" alt="" />
+        <a class="button" href=""> Add & Install Extension </a>
+      </div>
+
+      <div class="firefox">
+        <img class="logo" src="logo-firefox.svg" alt="" />
+        <h3 class="head">Add to Firefox</h3>
+        <p class="paragraph">Minimum version 55</p>
+        <img id="dots" src="bg-dots.svg" alt="" />
+        <a class="button" href=""> Add & Install Extension </a>
+      </div>
+      <div class="opera">
+        <img class="logo" src="logo-opera.svg" alt="" />
+        <h3 class="head">Add to Opera</h3>
+        <p class="paragraph">Minimum version 46</p>
+        <img id="dots" src="bg-dots.svg" alt="" />
+        <a class="button" href="">Add & Install Extension </a>
+      </div>
+    </div>
+
+    <div class="frequency-asked-questions">
+      <div><h2 class="freqH2">Frequently Asked Questions</h2></div>
+
+      <div>
+        <p id="para">
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+      </div>
+    </div>
+
+    <div id="accordion" role="tablist">
+      <div class="tabs" class="card">
+        <div class="card-header" role="tab" id="headingOne">
+          <h5 class="mb-0">
+            <a
+              id="anchor"
+              data-toggle="collapse"
+              href="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              What is Bookmark?
+            </a>
+          </h5>
+        </div>
+
+        <div
+          id="collapseOne"
+          class="collapse show"
+          role="tabpanel"
+          aria-labelledby="headingOne"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            <p class="PP">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+              quis quam ornare mattis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tabs" class="card">
+        <div class="card-header" role="tab" id="headingTwo">
+          <h5 class="mb-0">
+            <a
+              id="anchor"
+              class="collapsed"
+              data-toggle="collapse"
+              href="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              How can i request a new browser?
+            </a>
+          </h5>
+        </div>
+        <div
+          id="collapseTwo"
+          class="collapse"
+          role="tabpanel"
+          aria-labelledby="headingTwo"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            <p class="PP">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+              eros aliquet convallis ultricies. Mauris augue massa, ultricies
+              non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+              convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tabs" class="card">
+        <div class="card-header" role="tab" id="headingThree">
+          <h5 class="mb-0">
+            <a
+              id="anchor"
+              class="collapsed"
+              data-toggle="collapse"
+              href="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Is there a mobile app?
+            </a>
+          </h5>
+        </div>
+        <div
+          id="collapseThree"
+          class="collapse"
+          role="tabpanel"
+          aria-labelledby="headingThree"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            <p class="PP">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+              vestibulum dolor, ut condimentum urna vulputate eget. Cras in
+              ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs" id="anchor" class="card">
+        <div class="card-header" role="tab" id="headingfour">
+          <h5 class="mb-0">
+            <a
+              id="anchor"
+              class="collapsed"
+              data-toggle="collapse"
+              href="#collapsefour"
+              aria-expanded="false"
+              aria-controls="collapsefour"
+            >
+              What about other Chromium browsers?
+            </a>
+          </h5>
+        </div>
+        <div
+          id="collapsefour"
+          class="collapse"
+          role="tabpanel"
+          aria-labelledby="headingfour"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            <p class="PP">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in
+              placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+              pellentesque non ut velit. More Info 35,000+ already joined Stay
+              up-to-date with what we’re doing Contact Us Features Pricing
+              Contact
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="moreinfom">
+        <a id="moreinformation" href="">More info</a>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="upper-footer">
+        <div class="already-joined"><p>35,000 + ALREADY JOINED</p></div>
+        <div class="stayup">
+          <h2 class="stayupp">Stay up-to-date with what we're doing</h2>
+        </div>
+      </div>
+      <div class="input">
+        <input type="email" placeholder="Enter your email address" id="email" />
+        <img class="erroricon inputerror" src="icon-error.svg" alt="" />
+
+        <div>
+          <a id="redcontact" href="#redcontact" onclick="checkinput()"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+      <div class="errormessage">
+        <p>Whoops! Make sure it is an email</p>
+      </div>
+
+      <div class="bottomfooter">
+        <div>
+          <p class="bookmarklogo">BOOKMARK</p>
+        </div>
+        <div class="fpc">
+          <p class="bottomtext">FEATURES</p>
+          <p class="bottomtext">PRICING</p>
+          <p class="bottomtext">CONTACT</p>
+        </div>
+        <div class="iconn">
+          <img class="facebookicon" src="icon-facebook.svg" alt="" />
+          <img class="twittericon" src="icon-twitter.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

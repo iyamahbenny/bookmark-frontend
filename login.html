@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="stylee.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="box">
+      <div class="LOGIN"><h1 id="log">LOGIN</h1></div>
+      <div class="Input">
+        <input type="text" name="" placeholder="Username" id="username" />
+
+        <input type="password" name="" placeholder="password" id="password" />
+        <div class="click">
+          <button onclick="loginfunction()" class="clicklogin">login</button>
+
+          <a href="signup.html" class="clicksignup">sign up</a>
+        </div>
+        <div id="errormsg1">
+          <img src="icon-error.svg" alt="" />
+          <p>Password is not correct</p>
+        </div>
+        <div id="errormsg3">
+          <img src="icon-error.svg" alt="" />
+          <p>User does not exist</p>
+        </div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

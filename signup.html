@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="stylee.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="box">
+      <div class="SIGNUP">
+        <h1 id="welcome">CREATE AN ACCOUNT</h1>
+      </div>
+      <div class="Input">
+        <input type="text" name="" placeholder="Username" id="username" />
+        <input type="email" name="" placeholder="Email Address" id="email" />
+        <input type="password" name="" placeholder="password" id="password" />
+        <div class="click">
+          <button onclick="signupfunction()" class="clicklogin">Sign up</button>
+          <a class="clicksignup" href="login.html">Login</a>
+        </div>
+      </div>
+      <div id="errormsg2">
+        <img src="icon-error.svg" alt="" />
+        <p>User already exists</p>
+      </div>
+    </div>
+
+    <script src="signup.js"></script>
+  </body>
+</html>
